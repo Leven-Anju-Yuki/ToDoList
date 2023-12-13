@@ -1,0 +1,86 @@
+:root {
+  --supprimer: #ec0000;
+  --rose: #ee9595b6;
+  --text: #fff;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: rgb(36, 30, 30);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px; /* Limit width for larger screens */
+  width: 90%; /* Responsive width */
+  margin: 0 auto; /* Center container */
+  box-shadow: 0 0 10px var(--rose);
+}
+
+h1 {
+  color: #333;
+  background-color: var(--rose);
+  border-radius: 10px;
+}
+
+input {
+  padding: 8px;
+  margin: 8px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: var(--rose);
+  color: var(--text);
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 4px 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 2px solid var(--rose);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: var(--supprimer);
+  border: 1px solid black;
+  padding: 4px 8px;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px var(--rose);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  button {
+    width: 50%;
+  }
+}
